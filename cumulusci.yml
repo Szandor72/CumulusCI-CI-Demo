@@ -1,14 +1,25 @@
-minimum_cumulusci_version: '3.23.0'
+minimum_cumulusci_version: "3.23.0"
 project:
     name: cci-ci-demo
     package:
         name: CumulusCI CI Demo
         namespace: cci_ci_demo
-        api_version: '50.0'
+        api_version: "50.0"
     source_format: sfdx
     git:
+        repo_url: https://github.com/Szandor72/CumulusCI-CI-Demo
         default_branch: main
 
+flows:
+    release_beta:
+        # TODO: make release notes and github tags work without package upload
+        steps:
+            1:
+                task: None
+            2:
+                task: None
+            3:
+                task: None
 
 tasks:
     robot:
@@ -21,3 +32,15 @@ tasks:
         options:
             path: robot/cci-ci-demo/tests
             output: robot/cci-ci-demo/doc/cci-ci-demo_tests.html
+
+plans:
+    install:
+        slug: install
+        title: Install Demo from Template
+        tier: primary
+        description: This is a demo plan only.
+        steps:
+            1:
+                task: log
+                options:
+                    line: Log this message

@@ -1,6 +1,7 @@
 # Salesforce / SFDX / CCI
 .cci
 .sfdx
+.sf
 /src.orig
 /src
 
@@ -21,3 +22,6 @@ robot/cci-ci-demo/results/
 
 # Misc
 .DS_Store
+
+# Node
+/node_modules
