@@ -31,4 +31,4 @@ jobs:
 
             - name: Merge main into feature branches
               run: |
-                  cci flow run release_beta
+                  cci task run github_automerge_main
