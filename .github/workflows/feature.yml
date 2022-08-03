@@ -26,7 +26,7 @@ jobs:
                   cache-name: cache-dx-node-modules
               with:
                   # caching node_modules
-                  path: node_modules
+                  path: ~/.npm
                   key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
                   restore-keys: |
                       ${{ runner.os }}-build-${{ env.cache-name }}-
@@ -36,7 +36,7 @@ jobs:
             - name: Install SFDX
               if: steps.cache-dxnodemodules.outputs.cache-hit != 'true'
               run: |
-                  npm install sfdx-cli
+                  npm install sfdx-cli --global
 
             - name: Authenticate SFDX
               run: |
