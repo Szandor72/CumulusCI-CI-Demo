@@ -18,23 +18,10 @@ jobs:
                   echo "Checkout ${{ github.ref }} from ${{ github.repository }}."
             - uses: actions/checkout@v3
             - uses: actions/setup-node@v3
-
-            - name: Cache node modules
-              id: cache-dxnodemodules
-              uses: actions/cache@v2
-              env:
-                  cache-name: cache-dx-node-modules
               with:
-                  # caching node_modules
-                  path: ~/.npm
-                  key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/package-lock.json') }}
-                  restore-keys: |
-                      ${{ runner.os }}-build-${{ env.cache-name }}-
-                      ${{ runner.os }}-build-
-                      ${{ runner.os }}-
+                  cache: "npm"
 
             - name: Install SFDX
-              if: steps.cache-dxnodemodules.outputs.cache-hit != 'true'
               run: |
                   npm install sfdx-cli --location=global
 
