@@ -36,7 +36,7 @@ jobs:
             - name: Install SFDX
               if: steps.cache-dxnodemodules.outputs.cache-hit != 'true'
               run: |
-                  npm install sfdx-cli --global
+                  npm install sfdx-cli --location=global
 
             - name: Authenticate SFDX
               run: |
