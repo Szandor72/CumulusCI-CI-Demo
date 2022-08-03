@@ -78,11 +78,11 @@ jobs:
             - name: "Run Checks and fail Build"
               run: |
                   ~/pmd/bin/run.sh pmd -d ./force-app/main/default/classes -R ./pmd/ruleset.xml -f text
-    
+
     commitlint:
         runs-on: ubuntu-latest
         steps:
-        - uses: actions/checkout@v3
-          with:
-            fetch-depth: 0
-        - uses: wagoid/commitlint-github-action@v5
+            - uses: actions/checkout@v3
+              with:
+                  fetch-depth: 0
+            - uses: wagoid/commitlint-github-action@v5
