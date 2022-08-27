@@ -38,6 +38,7 @@ plans:
         slug: install
         title: Install Demo from Template
         tier: primary
+        is_listed: True
         description: This is a demo plan only.
         steps:
             1:
