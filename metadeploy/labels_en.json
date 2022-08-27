@@ -23,6 +23,42 @@
         "log": {
             "message": "log",
             "description": "title of installation step"
+        },
+        "github_parent_pr_notes": {
+            "message": "github_parent_pr_notes",
+            "description": "title of installation step"
+        },
+        "dx_convert_from": {
+            "message": "dx_convert_from",
+            "description": "title of installation step"
+        },
+        "unschedule_apex": {
+            "message": "unschedule_apex",
+            "description": "title of installation step"
+        },
+        "update_package_xml": {
+            "message": "update_package_xml",
+            "description": "title of installation step"
+        },
+        "deploy": {
+            "message": "deploy",
+            "description": "title of installation step"
+        },
+        "uninstall_packaged_incremental": {
+            "message": "uninstall_packaged_incremental",
+            "description": "title of installation step"
+        },
+        "Update Admin Profile": {
+            "message": "Update Admin Profile",
+            "description": "title of installation step"
+        },
+        "run_tests": {
+            "message": "run_tests",
+            "description": "title of installation step"
+        },
+        "github_automerge_feature": {
+            "message": "github_automerge_feature",
+            "description": "title of installation step"
         }
     }
 }
