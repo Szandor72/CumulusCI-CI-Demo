@@ -42,4 +42,4 @@ plans:
         description: This is a demo plan only.
         steps:
             1:
-                flow: ci_feature
+                flow: dev_org
