@@ -1,0 +1,28 @@
+{
+    "product": {
+        "title": {
+            "message": "InstallDemo",
+            "description": "name of product"
+        },
+        "short_description": {
+            "message": "InstallDemo",
+            "description": "tagline of product"
+        },
+        "description": {
+            "message": "InstallDemo",
+            "description": "shown on product detail page (markdown)"
+        }
+    },
+    "plan:install": {
+        "title": {
+            "message": "Install Demo from Template",
+            "description": "title of installation plan"
+        }
+    },
+    "steps": {
+        "log": {
+            "message": "log",
+            "description": "title of installation step"
+        }
+    }
+}
