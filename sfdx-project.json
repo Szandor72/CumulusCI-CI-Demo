@@ -1,5 +1,5 @@
 {
-    "packageDirectories": [{ "path": "cci_ci_demo", "default": true }],
+    "packageDirectories": [{ "path": "cci-ci-demo", "default": true }],
     "namespace": "cci_ci_demo",
     "sourceApiVersion": "50.0"
 }
