@@ -1,5 +1,5 @@
 {
-    "packageDirectories": [{ "path": "force-app", "default": true }],
+    "packageDirectories": [{ "path": "cci_ci_demo", "default": true }],
     "namespace": "cci_ci_demo",
     "sourceApiVersion": "50.0"
 }
