@@ -67,6 +67,16 @@ jobs:
         steps:
             - uses: actions/checkout@v3
 
+            - name: Get SDK Version from config
+              id: projectname
+              uses: mikefarah/yq@master
+              with:
+                  cmd: yq '.project.name' 'cumulusci.yml'
+
+            - name: test output
+              run: |
+                  echo ${{ steps.projectname.outputs.result }}
+
             - name: "Static Code Quality and Best Practices Checks provided by PMD"
               run: |
                   PMD_VERSION=`cat pmd/pmd-version.txt`
