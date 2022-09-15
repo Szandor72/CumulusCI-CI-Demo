@@ -87,9 +87,9 @@ jobs:
 
             - name: "Run Checks and fail Build"
               run: |
-                  find ./${{ steps.projectname.outputs.result }} -name '*.cls' > apexClassesToScan.txt
+                  find ${{ steps.projectname.outputs.result }} -name '*.cls' > apexClassesToScan.txt
                   cat apexClassesToScan.txt
-                  ~/pmd/bin/run.sh pmd -d ./${{ steps.projectname.outputs.result }} -R ./pmd/ruleset.xml -filelist apexClassesToScan.txt -f text
+                  ~/pmd/bin/run.sh pmd -d ${{ steps.projectname.outputs.result }} -R ./pmd/ruleset.xml -filelist apexClassesToScan.txt -f text
 
     commitlint:
         runs-on: ubuntu-latest
